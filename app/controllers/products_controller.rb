@@ -16,7 +16,9 @@ class ProductsController < ApplicationController
   end
 
   # GET /products/1/edit
-  def edit; end
+  def edit
+    @categories = Category.all
+  end
 
   # POST /products or /products.json
   def create
